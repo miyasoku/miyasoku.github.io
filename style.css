@@ -1,0 +1,289 @@
+@charset "utf-8";
+html {
+	overflow-y: scroll;
+}
+
+/*
+コメントアウト範囲
+*/
+
+body {
+	font-family: Meiryo UI, Meiryo, "メイリオ", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Verdana, sans-serif;
+	background-color: lightcyan;
+	height: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0.5em;
+}
+
+dl {
+	margin: 0em 1em;
+	margin-left: 1em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+#container {
+	text-align: left;
+	padding: 0;
+	line-height: 1.7;
+}
+
+#container img {
+	display: block;
+	margin: auto;
+	background-color: lightblue;
+}
+
+#container iframe {
+	display: block;
+	margin: 0.5em auto;
+	max-width: 100% !important;
+}
+
+#header {
+	background-color: lightblue;
+	border: #666666;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+#header img{
+	max-width: 960px;
+}
+
+header {
+	background-color: #fffaf0;
+	border: #666666;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#menu {
+	background-color: #5c9dbe;
+	display: flex;
+}
+
+#menu ul {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#menu ul li {
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	background: #5c9dbe;
+	width: 8.2em;
+	line-height: 2;
+}
+
+#menu li a {
+	display: block;
+	color: #eeeeee;
+	text-decoration: none;
+	cursor:pointer
+}
+
+#menu li a::after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color:#5c9dbe;
+	transform-origin: bottom right;
+	transition: transform .4s cubic-bezier(.86,0,.07,1)
+}
+
+#menu li a:hover::after{
+	display: block;
+	background-color: orange;
+	transform:scaleX(1);
+	transform-origin:bottom left
+}     
+
+ul.dropmenu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #5c9dbe;
+}
+
+ul.dropmenu ul{
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+
+ul.dropmenu li {
+	width: 9em;
+	text-align: center;
+	position: relative;
+	line-height: 2em;
+	flex-wrap: wrap;
+}
+
+ul.dropmenu li ul{
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	z-index:1
+}
+
+#topimg img {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul.dropmenu li a {
+	background-color: #5c9dbe;
+	color: #eeeeee;
+	border-right: 1px solid #999;
+	text-decoration: none;
+}
+
+ul.dropmenu li ul li a{
+	list-style-type: none;
+	border-right: none;
+	font-size: 80%;
+	border-bottom: 1px solid #999;
+	background-color: #5c9d9f;
+	z-index:1
+}
+
+ul.dropmenu li a:hover{
+	background-color: #7ac1e5;
+}   
+
+ul.dropmenu li:hover ul{
+	display: block;
+}
+
+#main {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	padding: 1em;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#footer {
+	background-color: #5c9dbe;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+	margin: 0 0 0.3em;
+	padding: 0.2em;
+	clear : both;
+}
+
+table {
+	max-width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid #999999;
+	border-spacing: 1px;
+}
+
+table tr td {
+	padding: 0.3em;
+	border: 1px solid #999999;
+	background-color: #f3f3f3
+}
+
+table th {
+	padding: 0.3em;
+	border: 1px solid #999999;
+	background-color: #dddddd;
+}
+
+.col2 {
+	margin: 0;
+	clear: both;
+}
+
+.col2left{
+	float: left;
+	width: 70%;
+}
+
+.col2right{
+	float: right;
+	width: 30%;
+}
+
+@media (max-width: 767px) {
+	div.col2left{
+		float: none;
+		width: 100%;
+	}
+	div.col2right{
+		float: none;
+		width: 100%;
+	}
+}
+
+h1 {
+	border-bottom: 2px dotted #ccc;
+	text-align: center;
+	font-size: 180%;
+}
+
+h2 {
+	font-size: 150%;
+	border-left: 6px solid #666666;
+	border-bottom: 2px solid #c2c2c2;
+}
+
+h3 {
+	font-size: 110%;
+	border-left: 6px solid #666666;
+	background-color: #e2e2e2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.2em;
+	padding: 0 0.5em;
+	clear: both;
+}
+
+.center img {
+	margin: auto;
+}
+
+.center iframe {
+	margin: 0.5em auto;
+}
+
+@media (max-width: 599px) {
+	.scroll-x {
+		white-space: nowrap;
+		overflow-x:auto;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
