@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入学おめでとうございます</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="sakura">
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="128px"></li>
+        <li><img src="sakura_leaf.png"
+                alt="" width="64px"></li>
+        <div class="title">祝入学<div class="text">この度はご入学誠におめでとうございます。</br>前途多難でも、一緒に頑張っていきましょう！</div></div>
+
+    </ul>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+        html {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(3deg, #ffffff, #ff8bff);
+            overflow: hidden;
+        }
+        
+        img {
+            image-rendering: -webkit-optimize-contrast;
+            pointer-events: none;
+        }
+        
+        .sakura {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sakura li {
+            position: absolute;
+            list-style: none;
+            top: -10rem;
+            background: #0000;
+            border-radius: 0% 70%;
+            animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        @keyframes fall {
+            to {
+                top: 120%;
+            }
+        }
+        
+        @keyframes sway1 {
+            from {
+                transform: translateX(0px) rotate(0deg);
+            }
+            to {
+                transform: translateX(200px) rotate(-345deg);
+            }
+        }
+        
+        @keyframes sway2 {
+            from {
+                transform: translateX(200px) rotate(-345deg);
+            }
+            to {
+                transform: translateX(0px) rotate(0deg);
+            }
+        }
+        
+        .sakura li:nth-child(1) {
+            left: 0%;
+            width: 24px;
+            height: 15px;
+            animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+            animation-delay: 2s;
+        }
+        
+        .sakura li:nth-child(2) {
+            left: 5%;
+            width: 13px;
+            height: 9px;
+            animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+            animation-delay: 8s;
+        }
+        
+        .sakura li:nth-child(3) {
+            left: 10%;
+            width: 16px;
+            height: 10px;
+            animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+            animation-delay: 13s;
+        }
+        
+        .sakura li:nth-child(4) {
+            left: 15%;
+            width: 16px;
+            height: 10px;
+            animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+            animation-delay: 7s;
+        }
+        
+        .sakura li:nth-child(5) {
+            left: 20%;
+            width: 16px;
+            height: 10px;
+            animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+            animation-delay: 0s;
+        }
+        
+        .sakura li:nth-child(6) {
+            left: 25%;
+            width: 24px;
+            height: 15px;
+            animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+            animation-delay: 3s;
+        }
+        
+        .sakura li:nth-child(7) {
+            left: 30%;
+            width: 16px;
+            height: 10px;
+            animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+            animation-delay: 7s;
+        }
+        
+        .sakura li:nth-child(8) {
+            left: 35%;
+            width: 13px;
+            height: 9px;
+            animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+            animation-delay: 3s;
+        }
+        
+        .sakura li:nth-child(9) {
+            left: 40%;
+            width: 16px;
+            height: 10px;
+            animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+            animation-delay: 4s;
+        }
+        
+        .sakura li:nth-child(10) {
+            left: 45%;
+            width: 24px;
+            height: 15px;
+            animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+            animation-delay: 8s;
+        }
+        
+        .sakura li:nth-child(11) {
+            left: 50%;
+            width: 13px;
+            height: 9px;
+            animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+            animation-delay: 5s;
+        }
+        
+        .sakura li:nth-child(12) {
+            left: 55%;
+            width: 16px;
+            height: 10px;
+            animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+            animation-delay: 1s;
+        }
+        
+        .sakura li:nth-child(13) {
+            left: 60%;
+            width: 16px;
+            height: 10px;
+            animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+            animation-delay: 2s;
+        }
+        
+        .sakura li:nth-child(14) {
+            left: 65%;
+            width: 16px;
+            height: 10px;
+            animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+            animation-delay: 3s;
+        }
+        
+        .sakura li:nth-child(15) {
+            left: 70%;
+            width: 24px;
+            height: 15px;
+            animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+            animation-delay: 3s;
+        }
+        
+        .sakura li:nth-child(16) {
+            left: 75%;
+            width: 16px;
+            height: 10px;
+            animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+            animation-delay: 3s;
+        }
+        
+        .sakura li:nth-child(17) {
+            left: 80%;
+            width: 13px;
+            height: 9px;
+            animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+            animation-delay: 6s;
+        }
+        
+        .sakura li:nth-child(18) {
+            left: 85%;
+            width: 16px;
+            height: 10px;
+            animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+            animation-delay: 1s;
+        }
+        
+        .title {
+            color: #ffffff;
+            font-size: 8rem;
+            text-align: center;
+            font-family: 'DotGothic16', sans-serif;
+            filter: drop-shadow(10px 10px 1px #0002);
+            font-weight: 100;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .text {
+            color: #ffffff;
+            font-size: 4rem;
+            text-align: center;
+            font-family: 'DotGothic16', sans-serif;
+            filter: drop-shadow(10px 10px 1px #0002);
+            font-weight: 100;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+         ::selection {
+            background-color: #fff1;
+        }
+        
+        @media (max-width:850px) {
+            .title {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
