@@ -5,24 +5,31 @@
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style.css">
-	<title>Welcome to My Page</title>
+	<link rel="stylesheet" href="parts.css">
+	<title>ようこそ、私のホームページへ！</title>
 </head>
 <body>
+<div id="splash">
+	<div id="splash_text"></div>
+	<div class="loader_cover loader_cover-up"></div>
+	<div class="loader_cover loader_cover-down"></div>
+</div>
 <div id="container">
-	<div id="header"><img src="images/logo.png" alt="logo created by me"></div>
+	<div id="header"><img src="images/logo.png" alt="A logo created by me"></div>
 	<div id="menu">
 	<ul class="dropmenu">
 		<li><a href="index.html">Home</a></li>
+		<li><a href="article.html">Articles</a></li>
 	</ul>
 	</div>
 	<div id="topimg">
 		<img src="images/space.png" alt="unknown space created by me">
 	</div>
 	<div id="main">
-	<h1>Welcome to My Page!</h1>
+	<h1>ようこそ、私のホームページへ！</h1>
 	<h2>このサイトについて</h2>
 		<p>当サイトは個人のウェブページであり、HTML や CSS の勉強に使用しています。このサイトはテンプレートを参考に作成されています。</p>
-		<p>This is a personal webpage. Studying HTML and CSS. Based on template as a reference.</p>
+		<p>This is a personal webpage. Studying HTML and CSS. Based on template.</p>
 	<div class="col2">
 		<div class="col2left">
 		<h3>お知らせ</h3>
@@ -30,7 +37,7 @@
 		<h3>更新情報</h3>
 			<dl class="history">
 				<dt>2023/03/28</dt><dd>【ウェブサイト】 設立</dd>
-				<dt>2023/04/01</dt><dd> 新年度を迎え、新たな一歩を踏み出す我々への<a href="pages/celebrate_1/celebrate_1.html">メッセージ</a>を掲載しました。</dd>
+				<dt>2024/10/15</dt><dd><a href="pages/magi/magi.html">Magiシステムもどき</a>開発開始</dd>
 			</dl>
 			</div>
 			<div class="col2right">
@@ -38,7 +45,7 @@
 				<p>作成者: みやーん</p>
 				<p>ご用の方は下記にてご連絡下さい。</p>
 				<ul>
-					<li>m18as09@gmail.com</a></li>
+					<li>現在、準備中</a></li>
 				</ul>
 			<h3>利用目的について</h3>
 				<p>特に決めてはいませんが、何らかの情報発信ができればいいなと思います。</p>
@@ -50,4 +57,7 @@
 	</div>
 </div>
 <div style="text-align: center;"><div style="display: inline-block; position: relative; z-index: 9999;"></div></div></body>
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="scirpt.js"></script>
 </html>
