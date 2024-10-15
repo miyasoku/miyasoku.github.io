@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Magi System</title>
+	<link rel="stylesheet" href="magi.css">
+</head>
+<body>
+	<h1>仮想人格による決定システム</h1>
+	<p>以下のボタンを押すと、3人の仮想人格が提案について判断します。</p>
+	<button onclick="getConsensus('この提案についてどう思いますか？')">START</button>
+	<button onclick="resetResult()">RESET</button>
+	<div class="decision-panel">
+    	<div class="decision-box" id="balthasar">BALTHASAR-2</div>
+		<div class="magi-box">Magi</div>
+		<div class="decision-box" id="melchior">MELCHIOR-1</div>
+	</div>
+	<div class="decision-panel">
+		<div class="decision-box" id="casper">CASPER-3</div>
+	</div>
+	<div id="result"></div>
+</body>
+<script src="magi.js"></script>
+</html>
