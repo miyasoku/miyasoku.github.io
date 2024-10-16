@@ -9,17 +9,19 @@
 <body>
 	<h1>仮想人格による決定システム</h1>
 	<p>以下のボタンを押すと、3人の仮想人格が提案について判断します。</p>
-	<button onclick="getConsensus('この提案についてどう思いますか？')">START</button>
-	<button onclick="resetResult()">RESET</button>
+	<p>それぞれが2分の1で承認か否定を決めてくれます。ただの確立マシーンです。</p>
+		<button onclick="getConsensus('この提案についてどう思いますか？')">START</button>
+		<button onclick="resetResult()">RESET</button>
 	<div class="decision-panel">
     	<div class="decision-box" id="balthasar">BALTHASAR-2</div>
-		<div class="magi-box">Magi</div>
-		<div class="decision-box" id="melchior">MELCHIOR-1</div>
+    	<div class="magi-box">Magi</div>
+    	<div class="decision-box" id="melchior">MELCHIOR-1</div>
 	</div>
 	<div class="decision-panel">
 		<div class="decision-box" id="casper">CASPER-3</div>
 	</div>
 	<div id="result"></div>
+	<div id="result-banner" class="result-banner"></div>
 </body>
 <script src="magi.js"></script>
 </html>
